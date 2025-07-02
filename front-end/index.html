@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Race Strat Planner</title>
+        <link rel="icon" type="image/png" href="websiteLogoGold.png">
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Race Strat Planner</h1>
+
+        <form id="stratForm">
+            <label><span id="optionHeading">Weather Type:</span> 
+                <select id="weatherType">
+                    <option value="Dry">Dry</option>
+                    <option value="Rain">Rain</option>
+                    <option value="Mixed">Mixed</option>
+                </select>
+            </label><br>
+
+            <label><span id="optionHeading">Fuel Load:</span>
+            <input type="number" id="fuelLoad" value="50" min="1" max="100">
+            </label><br>
+
+            <label><span id="optionHeading">Track Type:</span>
+                <select id="trackType">
+                    <option value="Street">Street</option>
+                    <option value="Permanent Circuit">Permanent Circuit</option>
+                </select>
+            </label><br>
+
+            <label><span id="optionHeading">Driver Aggression:</span>
+            <input type="range" id="aggression" min="1" max="10">
+            </label><br>
+
+            <div id="tireSection">
+            <p><span id="optionHeading" id="tireChoice" style="padding-right: 1rem; gap: 2;">Tire Choice:</span></p>
+                <div id="tireOptions">
+                    <label><input type="radio" name="tire" value="Soft" checked> Soft</label>
+                    <label><input type="radio" name="tire" value="Medium"> Medium</label>
+                    <label><input type="radio" name="tire" value="Hard"> Hard</label>
+                </div>
+            </div>
+
+            <button type="submit">Get Strategy</button>
+
+            <p id="output"></p>
+
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
