@@ -33,6 +33,26 @@ mood-predictor/
 
 ----------
 # HOW TO RUN LOCALLY
+```
+(type text following '-' into your terminal)
+
+Make sure you have Python installed on your system first:
+ - python --version
+(if you do not, you'll have to download it from their website before proceeding) 
+
+Ensure you have Flask and Flask-CORS installed:
+- pip install flask flask-cors
+
+Navigate to:
+- cd path/to/race-strat-planner/back-end
+
+Run the Flask server:
+ - python app.py
+
+Should then see something like, '* Running on http://127.0.0.1:5000 (Press CTRL+C to quit)', meaning the back-end is ready
+
+Then open index.html and the website should run as described earlier
+```
 
 ------------------
 # AUTHOR
